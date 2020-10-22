@@ -1,0 +1,33 @@
+Vous pouvez construire un nouveau module "java1-td1" dans le projet "partie1"
+
+1) Construire une classe "Exercice1" dans le package "fr.greta.java"
+Ajouter une fonction main pour exécuter la classe (exécuter sans rien dans la fonction pour tester)
+Afficher le message "Bonjour" dans la console (System.out.println("Bonjour"); dans la fonction)
+Afficher le message "Bonjour", mais cette fois-ci venant d'une variable (String message = "Bonjour";)
+
+A chaque nouvelle exercice, vous pouvez, soit construire une nouvelle classe (Exercice2, Exercice3 ...) avec une fonction main,
+soit mettre en commentaire le (les) précédent(s) exercices se trouvant dans le corps de la fonction main
+
+2) Faire un programme qui affiche "Bonjour tout le monde"
+Mais ce message est la concaténation de 2 variables String, l'une avec "Bonjour", l'autre avec " tout le monde". (via l'opérateur "+")
+
+3) Afficher la somme de la valeur deux variables int
+Afficher la somme de la valeur deux variables float
+Afficher la somme de la valeur deux constantes int
+
+Faire la même chose pour la soustraction, la multiplication, la division et le modulo
+
+4) Faire marcher un programme où l'on trouve la ligne de code "compteur += ajout;"
+Afficher la valeur de variable "compteur"
+Faire marcher un programme où l'on trouve la ligne de code "increment++;"
+Afficher la valeur de variable "increment"
+
+5) Utiliser l'opérateur "+" avec une String et un int. 
+Faire la même chose avec un int et une String (inverser le sens des opérandes)
+
+6) Exécuter et afficher le résultat de: 4 * 2 + 3
+Par rapport au résultat, quelle est l'opération la première exécution ? La multiplication et l'addition ?
+Exécuter et voir le résultat de: 3 + 2 * 4
+Par rapport au résultat, est ce que le sens des opérations influe sur l'ordre des exécutions ?
+Exécuter et voir le résultat de: (3 + 2) * 4
+Qu'elle est l'objectif des parenthèses dans des opérations ?

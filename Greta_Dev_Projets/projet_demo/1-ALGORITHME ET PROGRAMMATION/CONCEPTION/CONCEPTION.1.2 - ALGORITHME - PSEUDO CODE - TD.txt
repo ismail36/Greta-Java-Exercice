@@ -1,0 +1,90 @@
+
+Tester l'ensemble des fontions avec un algorithme qui permet de dérouler ces fonctions avec différents jeux d'essai
+
+Basique
+
+1) Créer une fonction qui prend en paramètre un nombre et retourne une valeur booleenne qui est vrai si le paramètre est positif.
+
+2) Créer une fonction qui prend en paramètre deux nombres et retourne le plus grand.
+
+3) Créer une fonction qui prend en paramètre un tableau et retourne un entier égal à la valeur la plus grande du tableau
+
+4) Créer une fonction qui prend en paramètre un tableau et retourne un tableau d'entier égal aux index de la valeur la plus grande
+
+5) Créer une fonction qui prend en paramètre un tableau et retourne vrai si l'ensemble des valeurs du tableau est pair.
+
+6) Créer une fonction qui prend en paramètre un tableau et retourne vrai si l'une des valeurs du tableau est paire.
+
+7) Créer une fonction qui prend en paramètre un tableau et retourne un tableau des valeurs paires du tableau en paramètre.
+
+8) Créer une fonction qui prend en paramètre un nombre et retourne une valeur booleenne qui est vrai si le paramètre est positif.
+
+9) Créer une fonction qui retourne le cube (puissance 3) d'un entier en argument.
+
+-----
+
+Intermédiaire
+
+1) Créer une fonction qui permet de retourner la valeur d'un element d'un tableau par rapport à son index,  
+ou retourne -1 si l'index est inférieur à 0 ou supérieur au plus grand index du tableau.
+
+2) Créer une fonction qui permet de faire la somme des N premiers entiers avec N un entier argument de la fonction.
+
+3) Créer une fonction qui permet d'initialiser un tableau de chaine caractère à '' (chaque élément recoit la valeur "chaine vide") 
+par rapport à un tableau récupéré en argument de la fonction.
+
+4) Créer une fonction qui permet d'intervertir deux valeurs d'un tableau
+par rapport à un tableau et deux indexes en argument de la fonction.
+
+5) Créer une fonction qui retourne une chaine caractère avec en valeur, avec une chaine de caractère et deux caractères en paramètre.
+La chaine retournée est égale à la chaine en paramètre mais tous les caractères du premier caractère en paramètre sont remplacés par le second.
+
+6) Créer une fonction qui retourne la fusion de deux tableaux par rapport à deux tableaux en argument de la fonction.
+
+7) Créer une fonction qui trie de manière croissante un tableau en paramètre.
+
+-----
+
+Chaine de caractère
+
+1) On crée une fonction verifEmail en pseudo-code qui prend une chaine de caractère en paramètre 
+et qui vérifie qu'il y a au moins 5 caractères dans ce paramètre (retourne vrai si c'est le cas, non sinon)
+
+Construire un algorithme qui appelle la fonction verifEmail.
+Si la fonction retourne vrai, afficher, "l'email est valide", sinon, afficher "l'email est invalide"
+
+2) Modifier verifEmail afin d'ajouter comme vérification, qu'il y a à aucun espace dans ce paramètre 
+
+3) Modifier verifEmail afin d'ajouter comme vérification, qu'il y a au moins un '@' dans ce paramètre  
+
+4) Modifier verifEmail afin d'ajouter comme vérification, que le caractère '@' est unique 
+
+5) Modifier verifEmail afin d'ajouter comme vérification, qu'il y a un moins un caractère dans la partie avant l''@' 
+
+6) Modifier verifEmail afin d'ajouter comme vérification, qu'il y a un moins 3 caractères dans la partie après l''@'
+
+7) Modifier verifEmail afin d'ajouter comme vérification, que la partie après l''@' possède un point
+
+
+-----
+
+Suite de Fibonacci: Numérique Avancé
+
+1) Suite de Fibonacci: Créer un algorithme fibonacci, qui récupère en argument entier numérique 
+et retourne la valeur de la suite de Fibonacci par rapport à cette argument.
+(Si vous ne connaissez pas la suite de Fibonacci, regardez sur le web, wikipédia ou autre ...)
+Exemple:
+0: 0
+1: 1
+2: 1
+3: 2
+4: 3
+5: 5
+6: 8
+7: 13
+...
+
+
+2) Suite de Fibonacci - Récurcif: Je vous montrerai le principe de récursivité par rapport à la suite de Fibonacci
+
+-----

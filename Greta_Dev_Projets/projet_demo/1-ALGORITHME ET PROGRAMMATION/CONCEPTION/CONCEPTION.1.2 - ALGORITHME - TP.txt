@@ -1,0 +1,109 @@
+On vous demande de construire une petite application afin de gérer un distributeur de boisson.
+
+On va construire étape par étape cette application, afin de la rendre de plus en plus complète. On va faire la première étape ensemble.
+
+---
+
+Besoin:
+
+Le but de l'application est de pouvoir construire une interaction entre l'utilisateur (le buveur de café) et la machine.
+L'utilisateur choisit une boisson, mets de l'argent en conséquence pour payer la boisson.
+Si il a payé, alors on lui distribue la boisson désirée. 
+Si il a mis trop d'argent, alors, on lui rend la monnaie.
+
+---
+
+Interactions:
+
+Le distributeur possède un panneau numérique avec les touches de 0 à 9 et A (pour annuler)
+Si l'utilisateur appuie sur l'une des touches, alors la valeur des touches vient en flux d'entrée (console)
+décrit via l'exemple: "PANNEAU: 3"
+
+
+Le distributeur se connecte avec la caisse enregistreuse du distributeur.
+Si l'utilisateur met de l'argent dans la caisse, l'application pourra récupérer cette information via le flux d'entrée
+décrit via l'exemple: "MONNAIE: 1"
+
+Pour afficher un message à l'utilisateur, on peut écrire dans le flux de sortie (console) "MESSAGE: " et son message
+Exemple:
+MESSAGE: Merci d'insérer 1.4 €
+
+Pour pouvoir distribuer une boisson, il faut écrire dans le flux de sortie "DISTRIB: " et le nom de la boisson
+Exemple:
+DISTRIB: CAFE
+DISTRIB: DOUBLE_CAFE
+DISTRIB: DECA
+
+Pour pouvoir rendre de la monnaie, il faut écrire dans le flux de sortie "RENDRE_MONNAIE: " et la monnaie à rendre
+exemple: "RENDRE_MONNAIE: 0.85"
+
+---
+
+1) Etape 1: On se lance
+
+Voici le premier scénario à mettre en place en algorithme
+
+Scénario:
+
+Notre buveur de café arrive normalement à l'état initial de la machine, ce qui veut dire qu'il n'y a pas d'argent en attente et on a affiché un message "Merci de choisir votre boisson"
+
+Pour l'instant, avec le panneau numérique, il peut choisir 1 pour un café, 2 pour un double café et 3 pour un déca.
+Si on recoit autre chose du panneau, il faut afficher un message "Demande incorrecte".
+Sinon, on lui affiche le message "Merci d'insérer XXXX €" ou XXXX est le prix de la boisson
+1 € pour un café, 1.6 pour un double et 0.95 pour un déca.
+
+Des qu'il met de l'argent, on met cette argent en attente. 
+Il peut mettre plusieurs pièces, du coup, on peut avoir plusieurs actions de mise de l'argent avant d'atteindre le prix de la boisson. 
+Si il n'a pas mis assez d'argent, on affiche un nouveau message "Merci d'insérer XXXX €" avec en XXXX, le prix de la boisson moins l'argent en attente.
+Il peut aussi appuyer sur la touche A qui annule sa commande, rend son argent en attente et retour sur l'état initial de la machine.
+
+Si l'argent en attente est supérieur ou égal au prix de la boisson, on encaisse l'argent (traitement automatique) et on distribue sa boisson. On lui rend aussi la monnaie, si il a mis trop d'argent.
+Ensuite, on revient à l'état initial de la machine.
+
+---
+
+2) Etape 2: Avec beaucoups de sucre
+
+Rajouter une étape après le choix de la boisson. On demande au buveur de café si il veut aussi du sucre.
+Il y a 5 niveaux de puissance pour le sucre. Après lui avoir afficher un message lui demandant de saisir une valeur, l'utilisateur doit taper entre 0 et 5 pour sur le panneau. (0 -> j'en veux pas, 5 -> j'en veux beaucoups)
+Afin de changer le niveau de la machine avant de distribuer la boisson, l'application doit envoyer la commande dans le flux de sortie:
+"SUCRE: X" pour le sucre avec X comme niveau de 0 à 5
+
+3) Etape 3: Gestion du stock de café
+
+Au démarrage de la machine, on met 2 kilo de café standard et un kilo de café décaféiné dans la réserve. 
+A chaque distribution de café, on recupère du café dans la réserve.
+Si on fait un café normal, on prend 20 grammes de café standard 
+Si on fait un café double, on prend 30 grammes de café standard 
+Si on fait un déca, on prend 15 gramme de café décaféiné
+
+Si un buveur de café désire un café et que le stock de café n'est pas suffisant pour son café, il faut lui envoyer un message pour lui demander changer de café.
+
+4) Gestion de la caisse
+
+4.1)
+On va gérer la caisse de monnaie.
+Le distributeur connait uniquement les pièces de 5, 10, 20, 50 centimes et 1 et 2 euros.
+Quand on récupère le message "MONNAIE: 0.1", on considère que l'utilisateur a mis une pièce de 10 centimes.
+Si ce n'est pas conforme, on met comme message "pièce non valide"
+
+Pour le retour monnaie, il faut maintenant écrire les messages:
+"RENDRE_MONNAIE: 2*0.2" pour dire que l'on rend 2 pièce de 20 centimes
+"RENDRE_MONNAIE: 3*0.1" pour dire que l'on rend 3 pièce de 10 centimes
+Maximiser le rendu de monnaie
+
+4.2)
+L'utilisateur ne peut pas mettre plus de 10 pièces pour une boisson. Si il dépasse ce nombre, on annule sa commande et on lui rend sa monnaie.
+
+4.3)
+On considère qu'au démarrage de l'application, le distributeur à 10 pièces de chaque type de pièce (10 pièces de 5 centimes, 10 pièces de 10 centimes, 10 pièces de 20 centimes ...)
+A chaque distribution de monnaie, on ajoute les pièces que l'utilisateur à mis pour avoir sa boisson dans la caisse et on enlève celle qui sont donnée pour faire la monnaie
+
+4.4) On ajoute la regle au niveau du retour de monnaie, que l'on ne peux pas rendre de pièce que l'on n'a pas en stock. Exemple, si on veux rendre 10 centimes et que l'on n'a plus de pièces de 10 centimes, il faudrait rendre 2 pièces de 5 centimes
+
+
+
+
+
+
+

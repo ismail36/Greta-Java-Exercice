@@ -1,0 +1,39 @@
+Bienvenue dans la campagne.
+On va construire une petite application 
+pour aider une ferme à gérer ces vaches et faire son fromage.
+
+1) Les vaches rentre à l'étable
+
+Quand les vaches rentrent à l'étable, elles passent une machine de traite.
+Le lait est récupérer et mis dans un fut.
+Il y a différentes races de vaches laitière (Normande, Hosltein, Jersaise) qui font du lait différent.
+Il faut que l'on remplisse les futs de lait par rapport à une race de vache.
+
+Compléter la fonction "rentrerVache" de la classe Etable qui rempli les futs de étables.
+Des qu'un fut possède du lait (on appelle cela un fut rempli), il ne peut recevoir uniquement du lait de vache de même race.
+
+(ne pas oublier d'enlever le lait des objets Vache)
+
+N'hésitez pas à exécuter la classe "TPVacheRunner" afin de voir le résultat. 
+Changer aussi le nombre de vache en entrée afin de tester votre fonction.
+
+2) Des que les futs sont remplis, on peut faire du fromage.
+Dans cette étable, on faire uniquement, du camembert, du reblochon et du comte.
+- Pour faire un camembert, il faut 2 unités de lait de Normande et une de Jersaise
+- Pour faire un reblochon, il faut 2 unités de lait de Hosltein et une de Normande
+- Pour faire un comté, il faut une unité de lait de Normande et un de Jersaise et une de Hosltein
+
+Construire la fonction fabriquerFromage de la classe Etable qui permet de construire du fromage 
+par rapport au lait qui se trouve dans les futs
+Faire de préférence 1) du camembert, 2) du reblochon, 3) du comté
+(ne pas oublier de diminuer les valeurs de lait dans les futs à chaque fromage)
+
+3) Maintenant, il faut préparer le marché et mettre les fromages dans des caisses pour les transporter.
+
+Construire une classe "Paquet", qui possède une propriété "contenu" qui est un tableau de 5 fromages
+
+Cosntruire une classe "Logistique", créer une fonction "Paquet[] empaqueter(Fromage[] fromages)"
+qui retourne des paquets avec des fromages en paramètre. On veut miniser le nombre de paquet mais on aimerait aussi optimiser pour mettre les fromages de même type dans les paquets.
+
+
+

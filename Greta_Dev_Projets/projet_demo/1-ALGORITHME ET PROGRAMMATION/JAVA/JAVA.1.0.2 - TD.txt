@@ -1,0 +1,65 @@
+
+--- Fonction
+
+1) Construire une fonction "static void direBonjour()" qui affiche "Bonjour" à la console. 
+Dans la fonction main, l'appeller 3 fois
+
+2) Construire une fonction avec une paramètre "static void direBonjour(String nom)" qui affiche à la console "Bonjour " et la valeur du paramètre. 
+Dans la fonction main, l'appeller 3 fois avec paramètres différents à chaque fois.
+
+3) construire une fonction "static float additionPuisMultiplication(int param1, int param2, int param3)" 
+qui retourne la valeur de l'addition de param1 et de param2, le tout multiplié par la valeur de param3.
+Dans la fonction main, l'appeller 3 fois avec paramètres différents à chaque fois, en affichant le résultat de la fonction dans la console.
+
+4) construire une fonction "static float additionPuisMultiplicationPuisSoustraction(int param1, int param2, int param3, int param4)
+qui retourne la valeur de additionPuisMultiplication(param1, param2, param3) moins la valeur de param4
+Dans la fonction main, l'appeller 3 fois avec paramètres différents à chaque fois, en affichant le résultat de la fonction dans la console.
+
+
+--- Objet
+
+1) Construire une classe "MaPremiereClasse" avec une propriété "public int val" et une fonction "public void maValeurEst()" qui affiche dans la console la valeur de val.
+Dans la fonction main, Construire 3 objets "MaPremiereClasse" avec des valeurs de "val" différentes et appelé la fonction maValeurEst() pour chaque objet.
+
+1) Construire une classe "MaDeuxiemeClasse" avec une propriété "public String str" et une fonction "public void creationMaPremiereClasse(int paramVal)".
+La fonction creationMaPremiereClasse construit un objet de type MaPremiereClasse, avec la valeur "val" égale à la valeur paramVal et appelle la fonction maValeurEst() de cet objet.
+Dans la fonction main, Construire 1 objet "MaDeuxiemeClasse" et appeler la fonction "creationMaPremiereClasse" 3 fois avec des paramètres différents.
+
+--- Cast
+
+1) Construire une variable float de nom "float1" avec comme valeur 4.2 et une variable int de nom "int2" de la valeur 6.
+Faire la somme de float1 et int2
+Faire la somme de float1 et int2 avec une valeur castée en int de float1. 
+
+--- Console
+
+1) Récupérer une valeur alphanumérique via l'entrée de la console et mettre cette valeur dans une variable String, afficher cette valeur en console
+
+2) Récupérer une valeur numérique via l'entrée de la console et mettre cette valeur dans une variable int, afficher cette valeur en console
+
+--- (Console, ) Condition If et opération de comparaison
+
+1) Récupérer une valeur numérique via l'entrée de la console. 
+Si celle-ci est supérieur à 10, alors afficher "la valeur est supérieure à 10", sinon, afficher "la valeur est inférieure à 10"
+
+2) Récupérer une valeur numérique via l'entrée de la console. 
+Si la valeur est entre 0 et 100, afficher "La valeur est valide"
+
+3) Récupérer une valeur numérique via l'entrée de la console. 
+Si la valeur est entre 0 et 100, afficher la valeur de la dizaine, puis afficher la valeur de l'unité
+Sinon afficher "La valeur n'est pas valide"
+
+--- (Console, ) Fonction de l'objet String
+
+1) Récupérer une valeur alphanumérique via l'entrée de la console. 
+Si cette valeur est égale à "Merci", afficher sur la console "De rien"
+
+2) Récupérer une valeur alphanuméric via l'entrée de la console. 
+Si cette valeur est égale à "Merci", quelque soit la casse, afficher sur la console "De rien"
+
+3) Récupérer une valeur alphanuméric via l'entrée de la console. 
+Si la longueur de chaine de cette valeur est supérieur 10 caractères, alors afficher les 7 premiers caractères avec "..."
+Sinon, afficher la valeur
+
+
+

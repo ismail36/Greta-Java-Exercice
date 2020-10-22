@@ -1,0 +1,32 @@
+Bienvenue sur la nouveau réseau sociaux "MyPopNetwork"
+
+Décrire via un diagramme d'activité, ne pas avoir peur d'aller petite étape par petite étape.
+
+1) La connection à l'application
+
+L'utilisateur arrive sur l'application a deux possibilités, soit il se connecte, soit il s'inscrit.
+
+Si il se connecte, il saisit ces identifiants, si c'est correcte, il rentre dans l'application.
+Si la connection a échoué, on demande de se reconnecter. Attention, il aura le droit à 3 tentatives sinon, son poste sera bloqué et il ne pourra plus se connecter.
+Il peut demander de changer de mot de passe, ce qui enverra un email avec un lien. Le lien permettra de changer de mot de passe et on le redirige sur la page de connection
+Si le changement de mot de passe se fait avec plus de 30 minutes, alors le changement ne sera pas faire, il sera redirigé sur la page d'accueil avec un message d'erreur.
+
+Si l'utilisateur désire s'incrire, il doit enregistrer son nom et son email. On lui envoie un lien par email afin de vérifier son email et de créer son mot de passe. 
+Si la création de mot de passe se fait avec plus de 30 minutes, l'inscription est annulé, on revient à la page d'accueil avec un message d'erreur
+Sinon, on envoie l'utilisateur sur la page de connection.
+
+2) Fonctionnalités de l'application
+
+Une fois connecté, l'utilisateur arrive sur la page de démarrage où il voit les 20 derniers posts. 
+
+Il peut créer sur "nouveau message", afin de construire un nouveau post et tomber sur l'interface d'édition de message.
+
+Il peut aussi cliquer sur un des posts disponibles pour voir son détails et les commentaires associées. 
+Sur ce détails, l'utilisateur peut ajouter un commentaire où il sera dirigé sur l'interface d'édition de message.
+
+Dans l'interface d'édition de message, on peut saisir du texte et compléter avec des images, des vidéos ou des smilets.
+A chaque ajout d'image ou de vidéo, on peut la visualiser avant l'envoie et l'enlever du message si on s'est trompé de fichier.
+Des que le message nous convient, on soumet le message via un bouton. 
+On retourne sur la page de démarrage si c'est la création d'un message ou sur le détail du message si c'est un commentaire.
+
+
