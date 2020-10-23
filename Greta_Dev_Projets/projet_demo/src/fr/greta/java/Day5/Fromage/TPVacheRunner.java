@@ -1,4 +1,6 @@
-package fr.greta.java.Day5;
+package fr.greta.java.Day5.Fromage;
+
+import fr.greta.java.Day5.VacheType;
 
 public class TPVacheRunner {
 
@@ -57,7 +59,7 @@ public class TPVacheRunner {
         etable.initFuts();
         etable.rentrerVache(vaches);
         etable.afficherEtatFuts();
-        etable.fabriquerFromage(fromages);
+        etable.affichierLesFromage(etable.fabriquerFromage(fromages));
         etable.afficherEtatFuts();
     }
 
