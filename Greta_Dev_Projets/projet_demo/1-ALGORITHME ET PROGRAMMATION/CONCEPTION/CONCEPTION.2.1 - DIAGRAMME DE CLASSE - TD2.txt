@@ -1,0 +1,25 @@
+On va construire une application pour aider une pizzeria à suivre des commandes et voir comment elles pourraient être plus efficace dans son processsus de commande. 
+Le but est de construire une application pour suivre les commandes en ligne et la livraison à distance. 
+La commande est gratuite si le temps entre le paiement et celui de la livraison est supérieur à 45 minutes, dont l'importance de ce suivi.
+
+On va construire le diagramme de classe pour chaque version. Vous pouvez construire un diagramme de cas d'utilisation pour vous aider.
+
+Version 1
+
+Voici le scénario de commande: L’utilisateur doit se connecter, il a un nom, un prénom, un téléphone, une adresse de facturation et une possiblement différente pour la livraison. 
+Il choisit ses pizzas pour créer sa commande. 
+Voici quelques exemples de pizza: « Jambon » à 8 €, « Royal » à 12 €, et « Caviar » à 35 € ...
+
+Version 2
+
+Des qu’il a validé et payé, cette commande passe "payé". On affecte une date de paiement à la commande et on affecte la commande à un pizzaiolo. 
+Un pizzaiolo a un prénom. Des que le pizzaiolo commence à préparer la commande, la commande passe en statut "en préparation" et on affecte une date de début de préparation.
+Des que le pizzaiolo a fini sa commande, le statut de la commande passe en statut "préparé" et on affecte une date de fin de préparation.
+
+Version 3
+
+Après la préparation, on attend le retour d'un livreur et il récupère la commande. On affecte la commande à un livreur et la commande passe en statut en livraison.
+Un livreur possède un prénom et un mode de livraison (vélo, scooter ou voiture)
+
+Des que le pizzaiolo a fini une commande, on attribue la commande à un livreur qui emporte la commande à destination, la commande a le statut « en livraison ». 
+Des que celle-ci est livré, la commande passe en statut « terminé », on affecte une date de livraison à ce moment. 

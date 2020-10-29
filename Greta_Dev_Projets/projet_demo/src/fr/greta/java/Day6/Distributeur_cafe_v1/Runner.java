@@ -6,6 +6,4 @@ public class Runner {
         Machine machine = new Machine();
         machine.run();
     }
-
-
 }

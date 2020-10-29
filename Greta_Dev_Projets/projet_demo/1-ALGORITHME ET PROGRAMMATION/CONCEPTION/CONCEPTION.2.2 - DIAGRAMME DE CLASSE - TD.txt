@@ -1,0 +1,18 @@
+On va continuer une application pour aider une pizzeria
+
+1) Dans une commande, on peut maintenant ajouter des produits, des boissons et des formules
+Un produit peut être une boisson, une pizza ou une formule.
+
+Une commande est une liste de produit
+Une formule est une réduction de achetant une combinaison de produit.
+Il y a la formule "2 pizzas + 1 boisson" qui fait un réduction de 4 € sur le tout
+Il y a la formule "4 pizzas + 1 boisson" qui offre gratuite la pizza la boisson
+Il y a la formule "6 pizzas" qui donne gratuite la pizza la moins cher
+Exemple de boisson: soda, eau gazeuse, jus d'orange ...
+
+2) On peut aussi créer des pizzas personnalisés.
+Une pizza personnalisée possède: 
+ - une épaisseur de pate (fine ou épaisse)
+ - une base (crème ou tomate)
+ - au moins 2 garnitures (jambon, champignon, anchois, capres, mozzarella, oignons ...)
+Le prix de la pizza personnalisée du nombre de garniture (8 + 2 * nbGarniture) 

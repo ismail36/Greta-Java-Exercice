@@ -27,7 +27,7 @@ public class Machine {
 
     private void init() {
         argentEnAttente = 0;
-        boissonSelectionne = null;
+        boissonSelectionne = Boisson.INCONNUE;
         etat = EtatMachine.INIT;
 
         machineInterface.demanderArgent(resteAPayer());
