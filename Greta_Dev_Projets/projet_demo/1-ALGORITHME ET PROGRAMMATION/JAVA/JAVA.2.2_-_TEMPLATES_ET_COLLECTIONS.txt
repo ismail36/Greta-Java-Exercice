@@ -1,0 +1,46 @@
+1) On va construire une classe générique Paire.
+
+1.1) Dedans on aura deux propriétés génériques "premier" et "deuxieme"
+
+1.2) Construire un construire avec deux arguements qui initie les deux propriétés
+
+1.3) Tester cette classe générique via une fonction main. Construire un objet Paire
+avec deux valeurs String
+
+1.4) Construire la fonction "sontJumeaux()" dans la classe Paire qui retourne vrai si
+leux deux arguements de la paires sont égaux (via la fonction equals)
+Tester avec des String
+
+1.5) construire une classe chaussette avec une propriété taille (int) et couleur (String)
+Surcharger la fonction equals, les chaussettes sont égales si la taille et la couleur sont identiques
+Dans le main, construire uen paire de chaussette et regarder si elles sont identiques
+
+1.6) Dans la classe Paire, construire une fonction 
+"public static <T> Paire<T> minMax(List<T> list)" qui construit une paire avec le
+premier et le dernier élément de la liste en argument de la fonction.
+Tester cette fonction dans le main.
+
+2) On va jouer un peu au poker
+
+2.1) Construire une classe Carte qui a un nombre (int) et une couleur (carreau, pique, trèfle ou coeur)
+
+2.2) Construire une classe Main ("Hand") qui est une liste de carte.
+Construire une fonction "add" dans la classe Main pour une carte jusqu'à avoir 5 cartes
+
+2.3) Construire dans la classe Main, une fonction result() qui retourne :
+	- CARREE si on a 4 cartes avec le même nombre
+	- FULL si on 3 cartes avec le même nombre et 2 autres avec le même nombre
+	- COULEUR si les 5 cartes sont de la même couleur
+	- SUITE si les 5 cartes se suivent
+	- BRELAN si il y a 3 cartes avec le même nombre
+	- DEUX_PAIRES si il y a 2 fois deux cartes avec le même nombre
+	- PAIRE si il y a juste deux cartes avec le même nombre
+	- VALEUR sinon
+
+3) Via une map, construire un dictionnaire (String -> String) des pays avec leur capitale que vous connaissez, afficher ceci dans un main
+
+4) Construire une classe Utilisateur (avec un nom en String)
+Construire une classe Livre (avec un titre en String)
+Dans un main construire une bibliothèque partagée (pour un joueur, on a des livres) via une map (Utilisateur -> List<Livre>)
+Ajouter vos livres préférées dans la bibliothèque (via la fonction put) et demander aux collègues quelques sont les leurs afin de les ajouter.
+Regarder si vous ajoutez deux utilisateurs avec le même nom. Regarder en surchargeant aussi avec la fonction "equals" de l'utilisateur pour voir le changement

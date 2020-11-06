@@ -1,0 +1,36 @@
+
+1)
+Créer une classe Moteur
+Créer une classe Voiture avec comme constructeur un moteur en argument et qui sette un objet moteur avec cet argument.
+
+2)
+Créer une classe Utilisateur (avec comme propriété: nom (String), prénom (String) et crééPar (Administrateur))
+Créer une classe Administrateur qui étend un utilisateur
+
+Créer une classe Application qui a un tableau d’utilisateur. 
+Elle possède une fonction creerAdministrateur qui retourne un administrateur avec en paramètre, un nom et un prénom
+Elle possède un fonction creerUtilisateur qui retourne un utilisateur avec en paramètre, un nom, un prénom et l’administrateur qui l’a créé
+
+3)
+-  Créer une interface Forme, avec une fonction dessiner() 
+- Une classe rectangle, qui implémente Forme, avec un constructeur avec les arguments longueur (int) et largeur (int).
+La fonction dessiner affiche le message “Un rectangle de longueur X et de largeur Y” (remplacer X avec la valeur de la
+longueur et y avec la valeur de la largeur)
+- Une classe carré, qui implémente Forme, avec un constructeur avec l’argument coté (int). La fonction dessiner affiche le
+message “Un carré de coté Z” (remplacer Z avec la valeur du cotée)
+- Une classe Dessin, qui a un tableau de forme. Il possède une fonction dessiner, qui appelle la fonction dessiner de chaque
+forme de son tableau
+
+
+4) Créer une classe TestStatic avec une propriété "public int myProp = 10;" et une propriete static "public static int myPropStatic = 15;"
+Créer deux objets de la classe TestStatic (A et B)
+Modifier la valeur de modifier la valeur de A.myProp à 5 et de A.myPropStatic à 20; Regardez la valeur de B.myProp et B.myPropStatic
+
+5) Créer une classe User avec un login/password en propriété
+                    AppConnectedUser avec un "User connectedUser" en propriété static
+                    Connection avec un tableau de 3 utilisateurs en propriété privé (bob/mdp, alice/mdp2 et admin/admin
+		    et une fonction login(String login, String password) en public qui, si il reconnait un utilisateur avec le login 
+et le mot de passe en paramètre, modifie la valeur connectedUser de AppConnectedUser avec cet utilisateur trouvé.
+
+6) reprendre les classes de 2) (Utilisateur et Administrateur)
+Réécrire la fonction equals de ces deux classes (equals si le nom et le prénom sont égaux pour l'utilisateur, si le nom, le prenom et son administrateur sont égaux)
