@@ -1,5 +1,4 @@
 package fr.greta.java;
 
-public class Try2 {
-
+public class Try3 {
 }
