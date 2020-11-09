@@ -42,7 +42,6 @@ public class Bateau {
     public void placer(int hv) {
         if (hv==1) {
             //grille.horizontal();
-            // Branch Deneme
         }
     }
 
